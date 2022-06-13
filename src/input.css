@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gambar {
+    border-image: url("img/elemen.png") 30 stretch;
+}
+
+.fade-left {
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.fade-right {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.hilang {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .8s;
+}
+
+.waktu {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: .7s;
+}
+
+
+.story {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.image {
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tampil {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.oke {
+    transform: translateX(0);
+    opacity: 100%;
+
+}
+
+.cover-down {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.lokasi-down {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.couple {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.form {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.psn {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.show {
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+
+.in-auto {
+    scale: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.scale-in {
+    scale: 1;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.mactive {
+    z-index: 50;
+}
+
+@media(min-width: 768px) {
+    .hilang {
+        transform: translateY(0);
+        opacity: 1;
+        transition: .5s;
+    }
+}
