@@ -1,5 +1,5 @@
 // Mengatur waktu akhir perhitungan mundur
-var countDownDate = new Date("Jun 11, 2022 15:37:25").getTime();
+var countDownDate = new Date("Oct 11, 2022 15:37:25").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {
@@ -25,6 +25,6 @@ var x = setInterval(function () {
     // Jika hitungan mundur selesai, tulis beberapa teks 
     if (distance < 0) {
         clearInterval(x);
-        $(".countdown").html("Berlangsung");
+        $(".countdown").html("Sedang Berlangsung <br> Terima kasih telah berkunjung");
     }
 }, 1000);

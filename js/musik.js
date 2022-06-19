@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $(".music").on("click", function () {
         console.log($(".player"));
         $(".player");
