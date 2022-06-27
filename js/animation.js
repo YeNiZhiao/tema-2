@@ -38,18 +38,6 @@ Swal.fire({
         // })
 
         $('.lah').scroll(function () {
-            // $("#player").get(0).play();
-            document.getElementById('player').muted = false;
-            document.getElementById('player').play();
-            if (!$(".music").hasClass("mactive")) {
-                $(".music").addClass("mactive");
-                $(".music").removeClass("shadow-md");
-                $(".music").addClass("shadow-lg");
-                $(".music").removeClass("bg-primary");
-                $(".music").addClass("bg-secondary");
-
-            }
-
             var wsScroll = $(this).scrollTop();
             if (wsScroll > $('.fade-left').offset().top - 100) {
                 // alert("oke");
@@ -95,7 +83,7 @@ Swal.fire({
                 $('.form').addClass("show");
             }
             // pesan
-            if ($(".pesan").offset().top - 100 < 200) {
+            if ($(".form").offset().top - 100 < 200) {
                 $(".psn").each(function (i) {
                     setTimeout(function () {
                         $('.psn').eq(i).addClass("show");
@@ -105,18 +93,6 @@ Swal.fire({
         })
         // window
         $(window).scroll(function () {
-            // $("#player").get(0).play();
-            document.getElementById('player').muted = false;
-            document.getElementById('player').play();
-            $("#player").get(0).play();
-            if (!$(".music").hasClass("mactive")) {
-                $(".music").addClass("mactive");
-                $(".music").removeClass("shadow-md");
-                $(".music").addClass("shadow-lg");
-                $(".music").removeClass("bg-primary");
-                $(".music").addClass("bg-secondary");
-
-            }
 
             var wsScroll = $(this).scrollTop();
             if (wsScroll > $('.fade-left').offset().top - 250) {
@@ -160,7 +136,7 @@ Swal.fire({
                 $('.form').addClass("show");
             }
             // pesan
-            if (wsScroll > $(".pesan").offset().top - 250) {
+            if (wsScroll > $(".form").offset().top - 250) {
                 $(".psn").each(function (i) {
                     setTimeout(function () {
                         $('.psn').eq(i).addClass("show");

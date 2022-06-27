@@ -213,10 +213,9 @@
                 </path>
             </svg>
         </section>
-        <section id="#date" class="date h-screen flex relative shadow-inner bg-textPrimary">
-            <img src="img/elemen-5.png"
-                class="text-center w-4/12 scale-75 absolute bottom-2 left-1/2 -translate-x-1/2 mx-auto" alt="">
+        <section id="#date" class="date min-h-screen flex relative shadow-inner bg-textPrimary py-4">
             <div class="waktu w-full self-center items-center">
+                <img src="img/elemen-5.png" class="text-center w-4/12 scale-75 mx-auto" alt="">
                 <h1 class="text-primary p-4 text-center font-poppins font-bold  text-2xl">Waktu
                     Pelaksanaan</h1>
                 <div class="countdown text-center font-poppins text-primary">
@@ -241,18 +240,18 @@
                         </div>
                     </div>
                 </div>
-                <h1 class="tanggal text-center font-poppins my-3 text-primary text-lg">11 Oktober 2022</h1>
-                <button
-                    class="simpan block w-4/12 p-2 my-6 bg-secondary hover:bg-komponen transition-all duration-150 hover:shadow-inner outline-none outline-0 text-textPrimary mx-auto rounded-lg"><i
-                        class="fas fa-calendar-check"></i> Save
-                    The Date</button>
-            </div>
-            <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#e8ffff" fill-opacity="1"
-                    d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,128C672,117,768,75,864,69.3C960,64,1056,96,1152,101.3C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
+                <div>
+                    <input type="text""
+                        class=" block bg-opacity-0 outline-0 border-0 overflow-hidden text-center bg-none
+                        bg-transparent mx-auto my-2 font-comfortaa text-lg text-primary" value="22 Oktober 2024"
+                        id="pilih" readonly />
+                    <button onclick="copy_text()"
+                        class="simpan block w-6/12 bg-primary p-2 rounded-md font-comfortaa my-2 mx-auto text-center text-slate-800 hover:bg-secondary hover:text-white transition-all duration-75"><i
+                            class="fas fa-calendar-check"></i> Simpan
+                        Waktu</button>
 
+                </div>
+            </div>
         </section>
         <section class="location h-screen relative flex flex-col p-4 align-middle items-center ">
             <h2 class="lokasi-down text-textPrimary p-4 text-center mx-auto font-poppins font-bold  text-2xl"><i
@@ -526,13 +525,19 @@
         </section>
     </div>
     </div>
-
+    <script type="text/javascript">
+        function copy_text() {
+            document.getElementById("pilih").select();
+            document.execCommand("copy");
+            Swal.fire('Tanggal Berhasil Disalin')
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/animation.js"></script>
     <script src="js/musik.js"></script>
     <script src="js/countdown.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <script>
 
     </script>
